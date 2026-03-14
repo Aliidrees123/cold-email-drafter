@@ -13,5 +13,3 @@ try:
 
 except Exception as e:
     raise RuntimeError(f"Configuration error: {e}")
-TEMPERATURE = 0.2
-MAX_TOKENS = 600

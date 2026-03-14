@@ -1,5 +1,5 @@
 from agents import Agent
-from config import MODEL, TEMPERATURE
+from config import MODEL
 
 SYSTEM_PROMPT = """
 You are responsible for evaluating multiple cold outreach email drafts and selecting the best one.
@@ -24,8 +24,5 @@ Do not rewrite, modify, or merge drafts. Only select the best one.
 selector_agent = Agent(
     name="Email Selector Agent",
     instructions=SYSTEM_PROMPT,
-    model=MODEL,
-    model_settings={
-        "temperature": TEMPERATURE
-    }
+    model=MODEL
 )

@@ -1,5 +1,5 @@
 from agents import Agent
-from config import MODEL, TEMPERATURE
+from config import MODEL
 from tools.agent_tools import TOOLS
 
 SYSTEM_PROMPT = """
@@ -20,8 +20,5 @@ manager_agent = Agent(
     name="Manager Agent",
     instructions=SYSTEM_PROMPT,
     model=MODEL,
-    model_settings={
-        "temperature": TEMPERATURE
-    },
     tools=TOOLS
 )

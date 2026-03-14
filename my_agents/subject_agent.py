@@ -1,5 +1,5 @@
 from agents import Agent
-from config import MODEL, TEMPERATURE
+from config import MODEL
 
 SYSTEM_PROMPT = """
 You are responsible for generating a subject line for a cold outreach sales email.
@@ -21,8 +21,5 @@ Return only the subject line.
 subject_agent = Agent(
     name="Subject Agent",
     instructions=SYSTEM_PROMPT,
-    model=MODEL,
-    model_settings={
-        "temperature": TEMPERATURE
-    }
+    model=MODEL
 )

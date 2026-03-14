@@ -1,5 +1,5 @@
 from agents import Agent
-from config import MODEL, TEMPERATURE
+from config import MODEL
 
 SYSTEM_PROMPT = """
 You are a sales email writing assistant.
@@ -19,8 +19,5 @@ Return only the email body.
 concise_agent = Agent(
     name="Concise Email Agent",
     instructions=SYSTEM_PROMPT,
-    model=MODEL,
-    model_settings={
-        "temperature": TEMPERATURE
-    }
+    model=MODEL
 )
