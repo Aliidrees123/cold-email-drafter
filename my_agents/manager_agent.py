@@ -1,5 +1,6 @@
 from agents import Agent
 from config import MODEL, TEMPERATURE
+from tools.agent_tools import TOOLS
 
 SYSTEM_PROMPT = """
 You are the manager agent responsible for coordinating the cold email drafting workflow.
@@ -21,5 +22,6 @@ manager_agent = Agent(
     model=MODEL,
     model_settings={
         "temperature": TEMPERATURE
-    }
+    },
+    tools=TOOLS
 )
