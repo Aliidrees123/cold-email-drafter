@@ -157,9 +157,6 @@ COLD-EMAIL-DRAFTER/
 │
 ├── ui/
 │   └── gradio_app.py
-│
-└── utils/
-    └── formatting.py
 ```
 
 ---
